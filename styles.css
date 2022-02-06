@@ -1,4 +1,4 @@
-/* .attribution {
+.attribution {
   font-size: 11px;
   text-align: center;
   font-family: "Outfit", sans-serif;
@@ -6,23 +6,35 @@
 
 .attribution a {
   color: hsl(228, 45%, 44%);
-} */
+}
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: hsl(212, 45%, 89%);
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  flex-direction: column;
+  padding: 50px;
 }
 
 section {
   padding: 20px;
-  margin: 50px auto;
-  width: 50%;
   background-color: hsl(0, 0%, 100%);
-  border-radius: 10%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
 }
 
 img {
-  border-radius: 10%;
-  width: 100%;
+  border-radius: 15px;
+  max-width: 100%;
 }
 
 p {
@@ -38,4 +50,11 @@ section p + p {
   font-size: 15px;
   font-weight: 300;
   color: hsl(213, 5%, 59%);
+  text-align: center;
+}
+
+@media (min-width: 500px) {
+  section {
+    width: 400px;
+  }
 }
